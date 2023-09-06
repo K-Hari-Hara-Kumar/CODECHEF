@@ -1,0 +1,28 @@
+# cook your dish here
+for i in range(int(input())):
+    X = input()
+    Y = input()
+    for i in range(len(X)):
+        if X[i].isalnum() and Y[i].isalnum():
+            if X[i] != Y[i]:
+                print("No")
+                break
+    else:
+        print("Yes")
+
+"""
+Problem Statement:
+Chef wants to implement wildcard pattern matching supporting only the wildcard '?'. 
+The wildcard character '?' can be substituted by any single lower case English letter for matching.
+He has two strings X and Y of equal length, made up of lower case letters and the character '?'. 
+He wants to know whether the strings X and Y can be matched or not.
+
+logic: eg: X = s?or?  --> s'c'or'e'
+           Y = sco??  --> sco'r''e' matched..
+       eg2: X = stor? --> stor'e'
+            Y = sco?? --> sco'r''e' not matched..
+here, known charcters we have to compare whether they are equal or not 
+while comparing we should exclude the ? comparisions and check for known charcters 
+
+
+"""
