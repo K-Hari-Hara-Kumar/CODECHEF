@@ -1,0 +1,27 @@
+for i in range(int(input())):
+    N = int(input())
+    S = input()
+    a = 0
+    b = 0
+    if S[0] == "A":
+        a = a+1
+    for i in range(len(S)-1):
+        if S[i] == S[i+1]:
+            if S[i] == "A":
+                a=a+1
+            elif S[i] == "B":
+                b=b+1
+    print(a,b)
+
+"""
+Test Cases: 4
+input:       output
+3
+AAA   -----> 3 0
+4
+BBBB  ------> 0 3
+5
+ABABB ------> 1 1
+5
+BABAB -------> 0 0
+"""
