@@ -1,0 +1,24 @@
+for i in range(int(input())):
+    N,X = map(int,input().split())
+    op = []
+    res = []
+    for j in range(N):
+        S,R = map(int,input().split())
+        op.append([S,R])
+    #print(s_l)
+    #print(r_l)
+    for i in op:
+        if i[0] > X:
+            pass
+        else:
+            res.append(i[1])
+    print(max(res))
+
+"""
+In this, I took inputs --> T   no. of test case
+                           N   no. of movies
+                           X   space available
+                           S   space
+                           R   rating
+
+"""
