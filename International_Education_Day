@@ -1,0 +1,8 @@
+# cook your dish here
+A,B,C = map(int,input().split())
+chef = A*C 
+chefina = B*C 
+if chef > chefina:
+    print(chef) 
+else:
+    print(chefina)
